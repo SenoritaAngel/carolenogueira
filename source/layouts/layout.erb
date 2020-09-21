@@ -1,10 +1,29 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Meta data for seo-->
+    <meta name="author" content="Señorita Angel" lang="fr">
+    <meta name="description" content="Carole Nogueira est une spécialiste de la relation homme cheval certifiée dans l’équitation éthologique en R+.
+    Quel est le rôle du comportementaliste équin ?">
+    <meta name="reply-to" contact="equin@carolenogueira.com">
+    <meta name="category" content="cheval">
+    <!--Meta data for seo-->
+    <!--Facebook Open Graph data-->
+    <meta property="og:url" content="https://carolenogueira.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="social-media-preview-carole-nogueira.jpg">
+    <meta property="og:description" content="Spécialiste de la relation homme cheval, Carole Nogueira est certifiée dans l’équitation éthologique en R+. Son objectif est de vous accompagner et de vous transmettre les clés afin de désamorcer une situation qui s’est détériorée ainsi retrouver et aboutir à une relation harmonieuse entre vous et votre cheval.">
+    <meta property="og:title" content="Carole Nogueira Comportementaliste Équin | Des solutions pour une meilleure communication">
+    <meta property="og:site_name" content="Carole Nogueira Comportementaliste Équin">
+    <!--Facebook Open Graph data-->
+
+    <!--mapbox API-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <!--<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' /> -->
 
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
@@ -12,7 +31,7 @@
     <%= stylesheet_link_tag "application" %>
 
     <!-- Uncomment this when you actually have a favicon.png in /images -->
-    <%#= favicon_tag 'images/favicon.png' %>
+    <%= favicon_tag 'favicon_carole_nogueira_32.png' %>
   </head>
   <body>
 
@@ -21,5 +40,6 @@
 
     <!-- We put the JS include tag after the yeild to prevent errors (when you try to select an element that is not already loaded on the page) -->
     <%= javascript_include_tag "application" %>
+
   </body>
 </html>
