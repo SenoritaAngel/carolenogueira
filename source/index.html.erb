@@ -526,3 +526,85 @@ title: Carole Nogueira Comportementaliste Équin | Des solutions pour une meille
   </ol>
   <!--/.Indicators-->
 </section>
+
+<section class="contact" style="background-image: url(images/horse_pasture_ocean_1400.jpg);">
+  <div class="contact-container">
+    <div class="contact-title">
+      <h1>CONTACTEZ-MOI</h1>
+      <p>Si vous avez des questions ou souhaitez des informations supplémentaires veuillez me contacter via le formulaire ci-dessous, par téléphone ou e-mail.
+      </p>
+    </div>
+
+    <div class="form-info-container">
+
+      <form action="https://formspree.io/mnqjyobo" method="POST" id="contact-form" class="form">
+        <div class="form-guest">
+          <!-- <label for="Firstname" data-error="wrong" data-success="right">Firstname</label> -->
+          <input class="form-control-guest bottom" type="text" placeholder="Votre prénom" id="firstname" name="firstname" required="">
+        </div>
+
+        <div class="form-guest">
+          <!-- <label for="Lastname" data-error="wrong" data-success="right"></label> -->
+          <input class="form-control-guest bottom" type="text" placeholder="Votre nom" id="lastname" name="lastname" required="">
+        </div>
+
+        <div class="form-guest">
+          <!-- <label for="exampleInputEmail1" data-error="wrong" data-success="right"></label> -->
+          <input type="email" name="_replyto" class="form-control-guest validate" id="Email" aria-describedby="emailHelp" placeholder="Votre email" required="">
+          <div id="emailHelp" class="form-text-mention">Je ne communiquerai jamais votre e-mail.</div>
+        </div>
+
+        <select class="form-control-guest bottom" id="subject department" searchable="Search here.." name="department" required="">
+          <option value="" disabled selected>Choisissez un sujet</option>
+          <option value="Communication animale">Communication animale</option>
+          <option value="Soin énergetique">Soin énergetique</option>
+          <option value="Clicker">Clicker</option>
+          <option value="Atelier">Atelier</option>
+          <option value="Autre demande">Autre demande</option>
+        </select>
+
+        <div class="form-guest">
+          <!-- <label for="textarea" data-error="wrong" data-success="right"></label> -->
+          <textarea class="form-control-guest bottom" type="text" name="message" placeholder="Ecrivez votre message ici" id="textarea" rows="4" required=""></textarea>
+        </div>
+
+        <div class="form-validate">
+          <div class="status"></div>
+          <button type="submit" class="btn btn-form-contact" onclick="validateForm();">ENVOYER</button>
+
+        </div>
+
+
+      </form>
+
+      <div class="info-container">
+        <div class="info-map">
+          <div class="info">
+            <img src="images/cn_phone_white_picto.png" alt="picto téléphone mobile" class="picto">
+            <p>+33 6 50 07 63 04</p>
+          </div>
+
+          <div class="info">
+            <!--email-->
+            <a href="mailto:equin@carolenogueira.com" target="_blank" role="button">
+              <img src="images/cn_email_white_picto.png" alt="picto courriel" class="picto">
+              <p>equin@carolenogueira.com</p>
+            </a>
+
+          </div>
+
+          <div class="info">
+            <img src="images/cn_location_white_picto.png" alt="picto localisation carte" class="picto">
+            <p>Route de la Corniche<br> 64122 Urrugne</p>
+          </div>
+
+        </div>
+
+        <!--mapbox-->
+        <div id="map">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
