@@ -1,5 +1,7 @@
-.media {
+.media-video-social {
   overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
   // height: 25vh;
   background: rgba(98,17,11,.8); /* red w/ opacity */
 }
@@ -11,9 +13,11 @@
   justify-content: space-between;
   align-items: flex-end;
   margin: 2% 5%;
+  width: 100%;
 }
 
 #horseVideo {
+  margin-right: 4%;
   border-radius: 4px;
   -webkit-box-shadow: 0 5px 11px 0 rgba(100,20,14,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
   box-shadow: 0 5px 11px 0 rgba(100,20,14,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
@@ -24,7 +28,7 @@
   flex-direction: column;
   // width: 45%;
   // padding-left: 3%;
-  flex: 0 auto;
+  // flex: 0 auto;
   h3 {
   font-family: 'rawengulklight';
   color: white;
@@ -39,11 +43,11 @@
 }
 
 .social-link {
-  padding-right: 2%;
+  padding-right: 3%;
 }
 
 @media (max-width: 768px) {
-  .media-container {
+  .media-video-social-container {
     display: flex;
     flex-direction: column;
     // flex-wrap: wrap;
@@ -52,8 +56,13 @@
     margin: 6% 8%;
   }
 
+  #horseVideo {
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+
   .media-body h3 {
-    margin-top: 3%;
+    // margin-top: 3%;
     font-size: 48px;
   }
 }
@@ -64,7 +73,7 @@
     height: 200px;
   }
   .media-body h3 {
-    margin-top: 3%;
+    // margin-top: 3%;
     font-size: 36px;
     letter-spacing: 3px;
     text-align: left;
