@@ -1,16 +1,58 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("https://fonts.googleapis.com/css?family=Flamenco:300,400|Petit+Formal+Script|Poppins:200,300,400,600,800|Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
 // Define fonts for body and headers
 $body-font: "Open Sans", "Helvetica", "sans-serif";
 $headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+  @font-face {
+    font-family: 'rawengulkbold';
+    src: url('../fonts/rawengulkbold-webfont.woff2') format('woff2'),
+         url('../fonts/rawengulkbold-webfont.woff') format('woff'),
+         url('../fonts/RawengulkBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'rawengulkdemibold';
+    src: url('../fonts/rawengulkdemibold-webfont.woff2') format('woff2'),
+         url('../fonts/rawengulkdemibold-webfont.woff') format('woff'),
+         url('../fonts/RawengulkDemibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'rawengulkregular';
+    src: url('../fonts/rawengulkregular-webfont.woff2') format('woff2'),
+         url('../fonts/rawengulkregular-webfont.woff') format('woff'),
+         url('../fonts/RawengulkRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'rawengulklight';
+    src: url('../fonts/rawengulklight-webfont.woff2') format('woff2'),
+         url('../fonts/rawengulklight-webfont.woff') format('woff'),
+         url('../fonts/RawengulkLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'rawengulkultralight';
+    src: url('../fonts/rawengulkultralight-webfont.woff2') format('woff2'),
+         url('../fonts/rawengulkultralight-webfont.woff') format('woff'),
+         url('../fonts/RawengulkUltralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$my-font: "rawengulkregular";
