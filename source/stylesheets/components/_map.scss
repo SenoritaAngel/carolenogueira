@@ -1,0 +1,35 @@
+#map {
+  overflow: hidden;
+  width: 400px;
+  height: 360px;
+  max-width: 95%;
+  max-height: 23%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 2px 2px 15px rgba(65, 72, 35, 0.8);
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 130px; /*img en paysage*/
+    width: 650px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #map{
+    width: 120px;
+    height: 180px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #map {
+    display: none;
+  }
+}
