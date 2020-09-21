@@ -1,0 +1,78 @@
+.btn-chevron {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  padding: 0;
+  // margin: 10px;
+  overflow: hidden;
+  // vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 60px;
+  height: 60px;
+
+  &.prev {
+    left: 180px;
+    margin: 0;
+  }
+
+  &.next {
+    right: 180px;
+    margin: 0;
+  }
+}
+
+.btn-chevron img {
+  width: 100%;
+  // height: 45.5rem;
+  opacity: 1;
+  padding-bottom: 3rem;
+}
+
+.btn-chevron:hover {
+  opacity: 0.5;
+}
+
+//tablet devices
+@media only screen and (max-width: 768px) {
+    .btn-chevron {
+    // width: 47px;
+    // height: 47px;
+
+    &.prev {
+      left: 100px;
+      margin: 0;
+    }
+
+    &.next {
+      right: 100px;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-chevron {
+    position: relative;
+    top: 0;
+    z-index: 5;
+    display: inline-block;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 47px;
+    height: 47px;
+  }
+}
