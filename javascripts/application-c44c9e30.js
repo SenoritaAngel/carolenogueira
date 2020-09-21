@@ -17963,6 +17963,13 @@ setInterval(function(){
 setInterval(function(){
     plusSlides(1, 1);
 }, 4000);
+// Auto play video
+const vid = document.getElementById("horseVideo");
+function enableAutoplay() {
+  vid.autoplay = true;
+  vid.load();
+}
+;
 $(document).ready(function(){
   $("#collapse1").on("hide.bs.collapse", function(){
     $("#close-icon1").html('<img src="images/chevron_down_cn.png" alt="chevron down red" class="chevron-down">');
