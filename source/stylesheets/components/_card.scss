@@ -1,0 +1,175 @@
+/*.about {
+  overflow: hidden;
+  height: 100vh;
+  background: white;
+  //background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.about-container {
+  // overflow: hidden;
+  // overflow: auto;
+  // height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-image {
+  z-index: 1;
+  overflow: hidden;
+  background-size: cover;
+  // background-position: center;
+  background-position: 30% 50%;
+  height: 100vh;
+  // min-height: 60rem;
+  min-width: 38%;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  font-family: 'Petit Formal Script';
+  font-size: 88px;
+  color: rgba(250,250,250,0.7);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+}
+
+.cards {
+  // padding-left: 4%;
+  // padding-right: 4%;
+  // max-width: 900px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  // flex-wrap: wrap;
+  margin: auto 5%;
+}
+
+.card-about-infos {
+  position: relative;
+  h1, h2 {
+  font-family: 'rawengulklight';
+  }
+
+  h1 {
+  // font-weight: 'rawengulklight';
+  font-size: 80px;
+  opacity: .5;
+  letter-spacing: 8px;
+  text-align: center;
+  line-height: 0.8;
+  margin: 0rem;
+  }
+
+  h2 {
+  font-size: 52px;
+  letter-spacing: 7px;
+  text-align: center;
+  line-height: 1.1;
+  }
+
+  h3 {
+  font-family: 'rawengulkregular';
+  font-size: 24px;
+  opacity: .7;
+  letter-spacing: 7px;
+  text-align: center;
+  line-height: 1.1;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  }
+
+  p {
+  font-family: 'rawengulkregular';
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.4;
+  opacity: .7;
+  }
+}
+
+//tablet and above devices
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    max-width: 90%;
+    margin: 10% 10%;
+  }
+
+  #about-image {
+    z-index: 1;
+    overflow: hidden;
+    height: 25vh;
+    min-width: 100%;
+    position: sticky;
+    top: 0px;
+    font-size: 5.5rem;
+  }
+}
+
+//smartphone
+@media (max-width: 576px) {
+  #about-image {
+    height: 15vh;
+    font-size: 4rem;
+  }
+
+  .card-about-infos {
+    position: relative;
+    h3, p {
+    font-family: 'rawengulkregular';
+    }
+
+    h1 {
+    font-family: 'rawengulklight';
+    font-size: 68px;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 0.8;
+    margin: 0rem;
+    }
+
+    h3 {
+    font-size: 20px;
+    letter-spacing: 7px;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    }
+
+    p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.3;
+    opacity: .7;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card-about-infos {
+    h1 {
+    font-size: 64px;
+    letter-spacing: 4px;
+    }
+
+    h3 {
+    letter-spacing: 5px;
+    }
+  }
+}
