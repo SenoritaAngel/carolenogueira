@@ -1,0 +1,108 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.banner-container h1 {
+  margin: 0;
+  // font-family: $my-font;
+  font-family: 'rawengulkdemibold';
+  color: white;
+  opacity: .7;
+  font-size: 4.5rem;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+.banner-container p {
+  font-family: $my-font;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner-container img {
+  height: 45.5rem;
+  opacity: .7;
+  padding-bottom: 3rem;
+}
+
+@media(max-width: 1280px) {
+ .banner-container img {
+   height: 38.5rem;
+   padding-bottom: 2rem;
+ }
+ .banner-container h1 {
+   font-size: 4rem;
+   letter-spacing: 7px;
+ }
+}
+
+@media(max-width: 992px) {
+ .banner-container img {
+   height: 37rem;
+   padding-bottom: 2rem;
+ }
+ .banner-container h1 {
+   font-size: 3.5rem;
+   letter-spacing: 5px;
+ }
+}
+
+@media(max-width: 768px) {
+ .banner-container {
+  //padding-top: 10%;
+ }
+ .banner-container img {
+   height: 36rem;
+   padding-bottom: 1.5rem;
+ }
+ .banner-container h1 {
+   font-size: 4rem;
+   letter-spacing: 5px;
+ }
+}
+
+@media(max-width: 576px) {
+ .banner-container {
+  padding-top: 15%;
+ }
+ .banner-container img {
+   height: 28.5rem;
+   padding-bottom: 1.5rem;
+ }
+ .banner-container h1 {
+   font-size: 2.5rem;
+   letter-spacing: 2px;
+ }
+}
+
+@media(max-width: 414px) {
+ .banner-container {
+  padding-top: 15%;
+ }
+ .banner-container img {
+   height: 20.5rem;
+   padding-bottom: 1.5rem;
+ }
+ .banner-container h1 {
+   font-size: 3.5rem;
+   letter-spacing: 2px;
+ }
+}
