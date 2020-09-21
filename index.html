@@ -28,7 +28,7 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Carole Nogueira Comportementaliste Équin | Des solutions pour une meilleure communication</title>
 
-    <link href="stylesheets/application-d8fac5ef.css" rel="stylesheet" />
+    <link href="stylesheets/application-73829dcb.css" rel="stylesheet" />
 
     <!-- Uncomment this when you actually have a favicon.png in /images -->
     <link href="images/favicon_carole_nogueira_32-906152d5.png" rel="icon" type="image/png" />
@@ -561,9 +561,110 @@
   <!--/.Indicators-->
 </section>
 
+<section class="contact" style="background-image: url(images/horse_pasture_ocean_1400-583fc906.jpg);">
+  <div class="contact-container">
+    <div class="contact-title">
+      <h1>CONTACTEZ-MOI</h1>
+      <p>Si vous avez des questions ou souhaitez des informations supplémentaires veuillez me contacter via le formulaire ci-dessous, par téléphone ou e-mail.
+      </p>
+    </div>
+
+    <div class="form-info-container">
+
+      <form action="https://formspree.io/mnqjyobo" method="POST" id="contact-form" class="form">
+        <div class="form-guest">
+          <!-- <label for="Firstname" data-error="wrong" data-success="right">Firstname</label> -->
+          <input class="form-control-guest bottom" type="text" placeholder="Votre prénom" id="firstname" name="firstname" required="">
+        </div>
+
+        <div class="form-guest">
+          <!-- <label for="Lastname" data-error="wrong" data-success="right"></label> -->
+          <input class="form-control-guest bottom" type="text" placeholder="Votre nom" id="lastname" name="lastname" required="">
+        </div>
+
+        <div class="form-guest">
+          <!-- <label for="exampleInputEmail1" data-error="wrong" data-success="right"></label> -->
+          <input type="email" name="_replyto" class="form-control-guest validate" id="Email" aria-describedby="emailHelp" placeholder="Votre email" required="">
+          <div id="emailHelp" class="form-text-mention">Je ne communiquerai jamais votre e-mail.</div>
+        </div>
+
+        <select class="form-control-guest bottom" id="subject department" searchable="Search here.." name="department" required="">
+          <option value="" disabled selected>Choisissez un sujet</option>
+          <option value="Communication animale">Communication animale</option>
+          <option value="Soin énergetique">Soin énergetique</option>
+          <option value="Clicker">Clicker</option>
+          <option value="Atelier">Atelier</option>
+          <option value="Autre demande">Autre demande</option>
+        </select>
+
+        <div class="form-guest">
+          <!-- <label for="textarea" data-error="wrong" data-success="right"></label> -->
+          <textarea class="form-control-guest bottom" type="text" name="message" placeholder="Ecrivez votre message ici" id="textarea" rows="4" required=""></textarea>
+        </div>
+
+        <div class="form-validate">
+          <div class="status"></div>
+          <button type="submit" class="btn btn-form-contact" onclick="validateForm();">ENVOYER</button>
+
+        </div>
+
+
+      </form>
+
+      <div class="info-container">
+        <div class="info-map">
+          <div class="info">
+            <img src="images/cn_phone_white_picto-d619b252.png" alt="picto téléphone mobile" class="picto">
+            <p>+33 6 50 07 63 04</p>
+          </div>
+
+          <div class="info">
+            <!--email-->
+            <a href="mailto:equin@carolenogueira.com" target="_blank" role="button">
+              <img src="images/cn_email_white_picto-1ff58d24.png" alt="picto courriel" class="picto">
+              <p>equin@carolenogueira.com</p>
+            </a>
+
+          </div>
+
+          <div class="info">
+            <img src="images/cn_location_white_picto-a38a531e.png" alt="picto localisation carte" class="picto">
+            <p>Route de la Corniche<br> 64122 Urrugne</p>
+          </div>
+
+        </div>
+
+        <!--mapbox-->
+        <div id="map">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="carole-nogueira-footer">
+    <div class="senorita-angel-container">
+      <div class="left">
+        <p>Carole Nogueira </p>
+          <img src="images/carole_nogueira_logo_white_28-19f67ac3.png" alt="logo Comportementaliste équin blanc" id="cn-icon">
+         <p> 2020</p>
+      </div>
+
+        <a class="right" href="https://senoritaangel.github.io/" target="_blank" role="button">
+          <img src="images/chevron_left_white_24-cb91d8ef.png" alt="chevron left white" class="icon">
+          <!-- <p> my heart goes</p> -->
+          <img src="images/heart_code_white_36-c66107be.png" alt="heart white" id="heart-icon">
+          <img src="images/chevron_right_white_24-aad3d3c7.png" alt="chevron right white" class="icon">
+          <p>by Señorita Angel</p>
+        </a>
+
+    </div>
+  </footer>
+
 
     <!-- We put the JS include tag after the yeild to prevent errors (when you try to select an element that is not already loaded on the page) -->
-    <script src="javascripts/application-d02da6b7.js"></script>
+    <script src="javascripts/application-32c0f207.js"></script>
 
   </body>
 </html>
