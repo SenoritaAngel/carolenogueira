@@ -57,6 +57,7 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
   h5 {
     font-family: 'rawengulkbold';
     font-size: 20px;
@@ -67,11 +68,30 @@
     margin-top: 1%;
     margin-bottom: 1%;
   }
+
+  .chevron-down {
+    max-width: 24px;
+  }
 }
 
-.chevron-down, .chevron-up {
-  max-width: 24px;
+.card-header a:active {
+  img{
+    transition: transform 0.5s;
+    transform:rotate(180deg);
+    animation-direction: alternate;
+  }
 }
+
+.card-header a:after {
+  .chevron-down{
+    animation-play-state: paused;
+  }
+}
+
+
+
+
+
 
 #card-body-view {
   display: flex;
