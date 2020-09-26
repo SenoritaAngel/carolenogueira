@@ -102,24 +102,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background: rgba(250,250,250,.8); /* white w/ opacity */
-    // background: rgba(98,17,11,1); /* red w/ opacity */
   }
 
   .left {
-    width: 210px;
-    p {
+    width: 370px;
+    letter-spacing: 1.2px;
+    p, a {
       font-size: 16px;
       line-height: 1rem;
     }
   }
 
   .right {
-    width: 190px;
+    width: 176px;
     p {
-      font-size: 16px;
-      line-height: 1rem;
+      font-size: 14px;
     }
+  }
+
+  #cn-icon {
+    height: 24px;
   }
 
   .icon {
@@ -134,27 +136,35 @@
   @keyframes myheartgoesboom {
     50% {transform: scale(2, 2);}
   }
-
-  #cn-icon {
-    height: 24px;
-  }
 }
 
 @media (max-width: 400px) {
-  .left {
-    width: 194px;
-
-    p {
-      font-size: 14px;
-      line-height: 1rem;
+    .left {
+      width: 316px;
+      p, a {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1rem;
+      }
     }
-  }
 
   .right {
-    width: 168px;
-
+    width: 150px;
     p {
-      font-size: 14px;
+      font-size: 12px;
+    }
+
+    .icon {
+      height: 10px;
+    }
+
+    #heart-icon {
+      height: 8px;
+      animation: myheartgoesboom 3s infinite;
+    }
+
+    @keyframes myheartgoesboom {
+      50% {transform: scale(2, 2);}
     }
   }
 }
