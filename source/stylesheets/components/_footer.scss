@@ -18,17 +18,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 385px;
-  opacity: .8;
-  p {
+  width: 430px;
+  // opacity: .8;
+  p, a {
     font-family: 'rawengulkbold';
     font-size: 18px;
     letter-spacing: 1.5px;
     margin: 0;
     // color: rgba(98,17,11,1);
-    color: rgba(250,250,250,1);
+    color: rgba(250,250,250,.8);
     // text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   }
+  a {
+    text-decoration: none;
+  }
+  & a:hover {
+    color: rgba(250,250,250,.5);
+  }
+}
+
+#cn-icon {
+  height: 40px;
+  opacity: .8;
 }
 
 .icon {
@@ -63,9 +74,7 @@
   50% {transform: scale(2.2, 2.2);}
 }
 
-#cn-icon {
-  height: 40px;
-}
+
 
 @media (max-width: 768px) {
   .carole-nogueira-footer {
@@ -99,7 +108,6 @@
 
   .left {
     width: 210px;
-
     p {
       font-size: 16px;
       line-height: 1rem;
@@ -108,7 +116,6 @@
 
   .right {
     width: 190px;
-
     p {
       font-size: 16px;
       line-height: 1rem;
