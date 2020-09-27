@@ -18102,7 +18102,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vub3JpdGFhbmdlbCIsImEiOiJjanNlazE5bjYwMGtxN
 
   map.on('load', function () {
     map.loadImage(
-      '/images/cn_location_marker_picto-68b399e8.png',
+      'https://senoritaangel.github.io/carolenogueira/images/cn_location_marker_picto.png',
       // Add an image to use as a custom marker
       function (error, image) {
         if (error) throw error;
