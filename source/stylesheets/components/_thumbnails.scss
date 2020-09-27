@@ -1,3 +1,7 @@
+.portfolio {
+  display: none;
+}
+
 .portfolio-container {
   background: white;
   flex-direction: row-reverse;
@@ -125,6 +129,10 @@
 
 //tablet and above devices
 @media only screen and (max-width: 768px) {
+  .portfolio {
+    display: none;
+  }
+
   .portfolio-container {
     flex-direction: row;
     justify-content: center;
