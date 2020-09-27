@@ -1,13 +1,41 @@
 #map {
   overflow: hidden;
   width: 400px;
-  height: 360px;
+  height: 390px;
   max-width: 95%;
-  max-height: 23%;
+  max-height: 32%;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
   box-shadow: 2px 2px 15px rgba(65, 72, 35, 0.8);
+}
+
+// #marker {
+//   // background-color: rgba(98,17,11,1); /* red opacity */
+//   background-image: url('/images/cn_location_marker_picto.png');
+//   // box-shadow: 2px 2px 15px rgba(65, 72, 35, 0.8);
+//   background-size: cover;
+//   width: 35px;
+//   height: 50px;
+//   // border-radius: 50%;
+//   cursor: pointer;
+// }
+
+.mapboxgl-popup {
+  max-width: 150px;
+  font: 14px/1rem $my-font, 'Poppins', Helvetica, sans-serif;
+  h5, p {
+    font-family: $my-font;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  h5 {
+    color: rgba(98,17,11,1);
+  }
+  p {
+    color: rgba(0,0,0,1);
+  }
 }
 
 @media (max-width: 768px) {
