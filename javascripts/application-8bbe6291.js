@@ -18176,62 +18176,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vub3JpdGFhbmdlbCIsImEiOiJjanNlazE5bjYwMGtxN
   map.addControl(new mapboxgl.FullscreenControl());
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "flex";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-;
-// Multiple Slideshows
-
-/* Class the members of each slideshow group with different CSS classes */
-
-var slideIndex = [1,1];
-var slideId = ["Slides", "slide-s-screen"]
-// var indicators = ["dot", "bullet"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-// Thumbnail image controls
-function currentSlide(n, no) {
-  showSlides(slideIndex[no] = n, no);
-}
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  var dots = document.getElementsByClassName("dot");
-  if (n > x.length) {
-    slideIndex[no] = 1
-    }
-  if (n < 1) {
-    slideIndex[no] = x.length
-    }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-    }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-    }
-  x[slideIndex[no]-1].style.display = "flex";
-  dots[slideIndex[no]-1].className += " active";
-}
-
-setInterval(function(){
-    plusSlides(1, 0);
-}, 4000);
-
-setInterval(function(){
-    plusSlides(1, 1);
-}, 4000);
 // Auto play video
 const vid = document.getElementById("horseVideo");
 function enableAutoplay() {
@@ -18239,6 +18183,43 @@ function enableAutoplay() {
   vid.load();
 }
 ;
+// One Slideshows
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide-carousel");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1
+    }
+  if (n < 1) {
+    slideIndex = slides.length
+    }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+}
+
+setInterval(function(){
+    plusSlides(1);
+}, 4000);
 // $(document).ready(function(){
 //   $("#collapse1").on("hide.bs.collapse", function(){
 //     $("#close-icon1").html('<img src="images/chevron_down_cn.png" alt="chevron down red" class="chevron-down">');
