@@ -17927,7 +17927,7 @@ return Popper;
     var dismissLinkId = 'cookieChoiceDismiss';
 
     function _createHeaderElement(cookieText, dismissText, linkText, linkHref) {
-      var butterBarStyles = 'position:fixed;width:100%;background-color:rgba(98,17,11,1);color:#FFFFFF;' +
+      var butterBarStyles = 'position:fixed;width:100%;background-color:rgba(250,250,250,1);color:rgba(98,17,11,1);' +
           'margin:0; left:0; bottom:0; padding:4px;z-index:1000;text-align:center;';
 
       var cookieConsentElement = document.createElement('div');
@@ -18092,12 +18092,18 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vub3JpdGFhbmdlbCIsImEiOiJjanNlazE5bjYwMGtxN
 
   // // create DOM element for the marker
   // const el = document.createElement('div');
-  //   el.id = 'marker';
+  //   el.className = 'marker';
+    // el.style.backgroundImage =
+    // 'url(/images/cn_location_marker_picto-68b399e8.png' +
+    // marker.properties.iconSize.join('/') +
+    // '/)';
+    // el.style.width = marker.properties.iconSize[0] + 'px';
+    // el.style.height = marker.properties.iconSize[1] + 'px';
 
-  // // create the marker
+  // create the marker
   // new mapboxgl.Marker(el)
   //   .setLngLat([-1.711850, 43.385433])
-  //   .setPopup(popup) // sets a popup on this marker
+  //   // .setPopup(popup) // sets a popup on this marker
   //   .addTo(map);
 
   map.on('load', function () {
@@ -18106,7 +18112,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vub3JpdGFhbmdlbCIsImEiOiJjanNlazE5bjYwMGtxN
       // Add an image to use as a custom marker
       function (error, image) {
         if (error) throw error;
-        map.addImage('cn-location-marker', image);
+        map.addImage('marker', image);
 
         map.addSource('places', {
           'type': 'geojson',
@@ -18117,7 +18123,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vub3JpdGFhbmdlbCIsImEiOiJjanNlazE5bjYwMGtxN
                 'type': 'Feature',
                 'properties': {
                   'description':
-                  '<h5><strong>Carole Nogueira Comportementaliste Équin</strong></h5><p>Route de la Corniche<br>64122 Urrugne</p>'
+                    '<h5><strong>Carole Nogueira Comportementaliste Équin</strong></h5><p>Route de la Corniche<br>64122 Urrugne</p>'
                 },
                 'geometry': {
                     'type': 'Point',
@@ -18134,11 +18140,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vub3JpdGFhbmdlbCIsImEiOiJjanNlazE5bjYwMGtxN
             'type': 'symbol',
             'source': 'places',
             'layout': {
-              'icon-image': 'cn-location-marker',
+              'icon-image': 'marker',
               'icon-allow-overlap': true
             }
         });
-    }
+      }
   );
 
   // Create a popup, but don't add it to the map yet.
